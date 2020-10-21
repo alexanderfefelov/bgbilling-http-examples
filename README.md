@@ -3,7 +3,7 @@
 ## Simple non-parameterized calls
 
 - Action
-    - [action-get-closed-data.sh](examples/action-get-closed-data.sh)
+    - [action-get-closed-date.sh](examples/action-get-closed-date.sh)
     - [action-get-contract-statuses.sh](examples/action-get-contract-statuses.sh)
     - [action-get-server-info.sh](examples/action-get-server-info.sh)
 - JSON
