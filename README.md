@@ -1,18 +1,18 @@
 # bgbilling-http-examples
 
-## Examples by tools
+## Примеры по инструментам
 
 - [Bash + HTTPie](examples/httpie)
 - [Python](examples/python)
 
-## Examples by methods
+## Примеры по методам
 
-### Simple non-parameterized calls
+### Непараметризованный вызов
 
 - Action
-    - [action-get-all-modules-actions.py](examples/python/action-get-all-modules-actions.py), [action-get-all-modules-actions.sh](examples/httpie/action-get-all-modules-actions.sh)
     - [action-get-closed-date.sh](examples/httpie/action-get-closed-date.sh)
     - [action-get-contract-statuses.sh](examples/httpie/action-get-contract-statuses.sh)
+    - [action-get-permissions.py](examples/python/action-get-permissions.py), [action-get-permissions.sh](examples/httpie/action-get-permissions.sh)
     - [action-get-server-info.sh](examples/httpie/action-get-server-info.sh)
 - JSON
     - [json-get-entities.sh](examples/httpie/json-get-entities.sh)
@@ -24,13 +24,13 @@
     - [soap-get-current-license.sh](examples/httpie/soap-get-current-license.sh)
     - [soap-get-plugins.py](examples/python/soap-get-plugins.py), [soap-get-plugins.sh](examples/httpie/soap-get-plugins.sh)
 
-### Parameterized calls
+### Параметризованный вызов
 
 - JSON
     - [json-get-available-scheduler-tasks.sh](examples/httpie/json-get-available-scheduler-tasks.sh)
 - SOAP
     - [soap-get-available-scheduler-tasks.sh](examples/httpie/soap-get-available-scheduler-tasks.sh)
 
-### Calls parameterized with an object
+### Вызов, параметризованный объектом
 
 - WIP
