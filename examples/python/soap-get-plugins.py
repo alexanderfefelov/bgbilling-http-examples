@@ -2,7 +2,6 @@
 
 
 import configparser
-import json
 import urllib.request
 
 

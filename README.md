@@ -1,6 +1,13 @@
 # bgbilling-http-examples
 
-## Simple non-parameterized calls
+## Examples by tools
+
+- [Bash + HTTPie](examples/httpie)
+- [Python](examples/python)
+
+## Examples by methods
+
+### Simple non-parameterized calls
 
 - Action
     - [action-get-all-modules-actions.py](examples/python/action-get-all-modules-actions.py), [action-get-all-modules-actions.sh](examples/httpie/action-get-all-modules-actions.sh)
@@ -17,13 +24,13 @@
     - [soap-get-current-license.sh](examples/httpie/soap-get-current-license.sh)
     - [soap-get-plugins.py](examples/python/soap-get-plugins.py), [soap-get-plugins.sh](examples/httpie/soap-get-plugins.sh)
 
-## Parameterized calls
+### Parameterized calls
 
 - JSON
     - [json-get-available-scheduler-tasks.sh](examples/httpie/json-get-available-scheduler-tasks.sh)
 - SOAP
     - [soap-get-available-scheduler-tasks.sh](examples/httpie/soap-get-available-scheduler-tasks.sh)
 
-## Calls parameterized with an object
+### Calls parameterized with an object
 
 - WIP
