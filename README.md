@@ -15,6 +15,7 @@
     - [action-get-permissions.py](examples/python/action-get-permissions.py), [action-get-permissions.sh](examples/httpie/action-get-permissions.sh)
     - [action-get-server-info.sh](examples/httpie/action-get-server-info.sh)
 - JSON
+    - [json-get-current-license.sh](examples/httpie/json-get-current-license.sh)
     - [json-get-entities.sh](examples/httpie/json-get-entities.sh)
     - [json-get-modules.sh](examples/httpie/json-get-modules.sh)
     - [json-get-modules-instances.sh](examples/httpie/json-get-modules-instances.sh)
