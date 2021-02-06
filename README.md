@@ -16,6 +16,7 @@
     - [action-get-server-info.sh](examples/httpie/action-get-server-info.sh)
 - JSON
     - [json-get-current-license.sh](examples/httpie/json-get-current-license.sh)
+    - [json-get-dynamic-classes.py](examples/python/json-get-dynamic-classes.py)
     - [json-get-entities.sh](examples/httpie/json-get-entities.sh)
     - [json-get-modules.sh](examples/httpie/json-get-modules.sh)
     - [json-get-modules-instances.sh](examples/httpie/json-get-modules-instances.sh)
