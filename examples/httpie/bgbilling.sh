@@ -17,6 +17,7 @@ readonly ENDPOINT_SCHEDULER=ru.bitel.bgbilling.kernel.task/SchedulerService
 readonly ENDPOINT_USER=ru.bitel.bgbilling.kernel.bgsecure/UserService
 readonly ENDPOINT_USER_RIGHT=ru.bitel.bgbilling.kernel.bgsecure/UserRightService
 
+readonly NAMESPACE_DYNAMIC_CODE=http://common.dynamic.kernel.bgbilling.bitel.ru/
 readonly NAMESPACE_LICENSE=http://service.common.license.admin.kernel.bgbilling.bitel.ru/
 readonly NAMESPACE_PLUGINCFG=http://common.plugincfg.admin.kernel.bgbilling.bitel.ru/
 readonly NAMESPACE_SCHEDULER=http://common.task.kernel.bgbilling.bitel.ru/

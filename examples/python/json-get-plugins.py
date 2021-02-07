@@ -18,6 +18,6 @@ parameters = '{}'
 request_json = request_template % (method, parameters)
 request = urllib.request.Request(url)
 request.add_header('Content-Type', 'application/json; charset=utf-8')
-response = urllib.request.urlopen(request, json.dumps(json.loads(request_json)).encode('utf-8'))
+response = urllib.request.urlopen(request, json.dumps(json.loads(request_json)).encode('utf8'))
 response_body = response.read().decode('utf8')
 print(response_body)

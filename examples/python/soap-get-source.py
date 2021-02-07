@@ -8,11 +8,14 @@ import urllib.request
 config = configparser.ConfigParser(interpolation=configparser.ExtendedInterpolation())
 config.read('bgbilling.conf')
 
-url = config.get('http.soap', 'url_endpoint_plugincfg')
+url = config.get('http.soap', 'url_endpoint_dynamic_code')
 request_template = config.get('http.soap', 'request_template')
-namespace = config.get('http.soap', 'namespace_plugincfg')
+namespace = config.get('http.soap', 'namespace_dynamic_code')
 
-call = '<getPlugins/>'
+call = '''
+<getSource>
+    <className xmlns="">SysInfo</className>
+</getSource>'''
 
 request_xml = request_template % (namespace, call)
 request = urllib.request.Request(url)

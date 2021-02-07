@@ -18,6 +18,6 @@ parameters.update({
 
 data = urllib.parse.urlencode(parameters)
 request = urllib.request.Request(url)
-response = urllib.request.urlopen(request, data.encode('ascii'))
+response = urllib.request.urlopen(request, data.encode('utf8'))
 response_body = response.read().decode('utf8')
 print(response_body)

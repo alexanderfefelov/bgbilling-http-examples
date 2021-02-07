@@ -32,6 +32,7 @@
     - [json-get-available-scheduler-tasks.sh](examples/httpie/json-get-available-scheduler-tasks.sh)
 - SOAP
     - [soap-get-available-scheduler-tasks.sh](examples/httpie/soap-get-available-scheduler-tasks.sh)
+    - [soap-get-source.py](examples/python/soap-get-source.py), [soap-get-source.sh](examples/httpie/soap-get-source.sh)
 
 ### Вызов, параметризованный объектом
 
