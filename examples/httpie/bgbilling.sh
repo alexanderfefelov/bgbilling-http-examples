@@ -17,6 +17,10 @@ readonly ENDPOINT_SCHEDULER=ru.bitel.bgbilling.kernel.task/SchedulerService
 readonly ENDPOINT_USER=ru.bitel.bgbilling.kernel.bgsecure/UserService
 readonly ENDPOINT_USER_RIGHT=ru.bitel.bgbilling.kernel.bgsecure/UserRightService
 
+readonly NAMESPACE_LICENSE=http://service.common.license.admin.kernel.bgbilling.bitel.ru/
+readonly NAMESPACE_PLUGINCFG=http://common.plugincfg.admin.kernel.bgbilling.bitel.ru/
+readonly NAMESPACE_SCHEDULER=http://common.task.kernel.bgbilling.bitel.ru/
+
 #
 # Arguments:
 #   $1 - module
@@ -55,18 +59,19 @@ call_json_service() {
 #
 # Arguments:
 #   $1 - endpoint
-#   $2 - SOAP message body as XML node
+#   $2 - namespace
+#   $3 - SOAP message body as XML node
 # Returns:
 #   none
 #
 call_soap_service() {
-  export MESSAGE_BODY=$2
+  export MESSAGE_BODY=$3
   local -r XML_TEMPLATE='<?xml version="1.0" encoding="utf-8" ?>
     <e:Envelope xmlns:e="http://schemas.xmlsoap.org/soap/envelope/">
       <e:Header>
         <auth xmlns="http://ws.base.kernel.bgbilling.bitel.ru/" user="$USERNAME" pswd="$PASSWORD"></auth>
       </e:Header>
-      <e:Body>
+      <e:Body xmlns="'$2'">
         $MESSAGE_BODY
       </e:Body>
     </e:Envelope>'
