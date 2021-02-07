@@ -10,8 +10,8 @@ config.read('bgbilling.conf')
 
 endpoint_url = config.get('http.soap', 'url_endpoint_plugincfg')
 request_template = config.get('http.soap', 'request_template')
+namespace = config.get('http.soap', 'namespace_plugincfg')
 
-namespace = 'http://common.plugincfg.admin.kernel.bgbilling.bitel.ru/'
 call = '<getPlugins/>'
 
 request_xml = request_template % (namespace, call)
