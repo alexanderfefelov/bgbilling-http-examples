@@ -4,7 +4,8 @@
 
 export MODULE_ID=${1:-0}
 
-readonly CALL='<getAvailableSchedulerTasks>
+readonly CALL='
+<getAvailableSchedulerTasks>
     <moduleId>$MODULE_ID</moduleId>
 </getAvailableSchedulerTasks>'
 

@@ -3,7 +3,8 @@
 . bgbilling.sh
 
 export MODULE_ID=${1:-0}
-readonly CALL_PARAMETERS='{
+readonly CALL_PARAMETERS='
+{
     "moduleId": $MODULE_ID
 }'
 
