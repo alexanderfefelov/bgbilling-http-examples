@@ -9,15 +9,15 @@ config = configparser.ConfigParser(interpolation=configparser.ExtendedInterpolat
 config.read('bgbilling.conf')
 
 url = config.get('http.action', 'url_api')
-request_parameters = dict(config.items('http.action.parameters'))
 
-request_parameters.update({
+parameters = dict(config.items('http.action.parameters'))
+parameters.update({
     'module': 'admin.bgsecure',
     'action': 'GetAllModuleActions'
 })
-request_data = urllib.parse.urlencode(request_parameters)
 
+data = urllib.parse.urlencode(parameters)
 request = urllib.request.Request(url)
-response = urllib.request.urlopen(request, request_data.encode('ascii'))
+response = urllib.request.urlopen(request, data.encode('ascii'))
 response_body = response.read().decode('utf8')
 print(response_body)

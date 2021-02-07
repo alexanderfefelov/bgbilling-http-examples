@@ -12,9 +12,10 @@ config.read('bgbilling.conf')
 endpoint_url = config.get('http.json', 'url_endpoint_dynamic_code')
 request_template = config.get('http.json', 'request_template')
 
-request_parameters = '{}'
-request_json = request_template % ('getDynamicClasses', request_parameters)
+method = 'getDynamicClasses'
+parameters = '{}'
 
+request_json = request_template % (method, parameters)
 request = urllib.request.Request(endpoint_url)
 request.add_header('Content-Type', 'application/json; charset=utf-8')
 response = urllib.request.urlopen(request, json.dumps(json.loads(request_json)).encode('utf-8'))
