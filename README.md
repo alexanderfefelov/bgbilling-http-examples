@@ -12,10 +12,11 @@
 - Action
     - [action-get-closed-date.sh](examples/httpie/action-get-closed-date.sh)
     - [action-get-contract-statuses.sh](examples/httpie/action-get-contract-statuses.sh)
+    - [action-get-current-license-7.1.sh](examples/httpie/action-get-current-license-7.1.sh)
     - [action-get-permissions.py](examples/python/action-get-permissions.py), [action-get-permissions.sh](examples/httpie/action-get-permissions.sh)
     - [action-get-server-info.sh](examples/httpie/action-get-server-info.sh)
 - JSON
-    - [json-get-current-license.sh](examples/httpie/json-get-current-license.sh)
+    - [json-get-current-license-8.0.sh](examples/httpie/json-get-current-license-8.0.sh)
     - [json-get-dynamic-classes.py](examples/python/json-get-dynamic-classes.py)
     - [json-get-entities.sh](examples/httpie/json-get-entities.sh)
     - [json-get-modules.sh](examples/httpie/json-get-modules.sh)
@@ -23,7 +24,7 @@
     - [json-get-plugins.py](examples/python/json-get-plugins.py), [json-get-plugins.sh](examples/httpie/json-get-plugins.sh)
     - [json-get-users.sh](examples/httpie/json-get-users.sh)
 - SOAP
-    - [soap-get-current-license.sh](examples/httpie/soap-get-current-license.sh)
+    - [soap-get-current-license-8.0.sh](examples/httpie/soap-get-current-license-8.0.sh)
     - [soap-get-plugins.py](examples/python/soap-get-plugins.py), [soap-get-plugins.sh](examples/httpie/soap-get-plugins.sh)
 
 ### Параметризованный вызов
