@@ -1,11 +1,11 @@
 readonly HTTP="http --verbose --check-status"
 readonly USER_AGENT=docker-backpack-bgbilling
-readonly EXECUTER=http://bgbilling-server.backpack.test:60080/billing/executer
+readonly EXECUTER=http://bgbilling-server.backpack.test:8098/billing/executer
 readonly API_ACTION=$EXECUTER
 readonly API_JSON=$EXECUTER/json
 readonly API_SOAP=$EXECUTER
-export USERNAME=api_maolaechuuke
-export PASSWORD=onguushooyee
+export USERNAME=foobar_Ee0ahm9shoht
+export PASSWORD=uaz3ji4uQuie
 
 readonly ENDPOINT_CONFIG=ru.bitel.bgbilling.kernel.config/ConfigService
 readonly ENDPOINT_DYNAMIC_CODE=ru.bitel.bgbilling.kernel.dynamic/DynamicCodeService
